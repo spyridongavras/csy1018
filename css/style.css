@@ -1,0 +1,252 @@
+/* Style the body of the html */
+ body{
+	/*Removes the default style of the html*/
+	padding:0;
+	margin:0;
+	background-color:#e6e6e6;
+}
+
+/*Makes a container for the navigation menu covering the whole top width and centering the menu*/
+.container-menu {
+  width: 100%;
+  margin: 0 auto;
+ }
+
+/* Styles the navigation menu and centers it*/
+.navigation-menu {
+  background-color: #009999;
+  height: 70px;
+  text-align:center;
+}
+
+/*Makes the image to stay on the left side */
+.navigation-menu img{
+float:left;
+}
+
+/*Makes the image to stay on the left side */
+.index_img{
+  float:left;
+  height: auto;
+  width: 100%;
+  max-width: 300px; 
+}
+
+/* Puts the image under the other image */
+.index_img_clear{
+	clear:left;
+}
+
+/* Applies a padding on the text of the second picture of index */
+.text_padding{
+	padding:100px;
+}
+
+
+/* Center the menu words */
+.navigation-menu ul {
+  display:inline-block; /*Text next to each other*/
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+/* Style the space of the words of the menu */
+/* Adjust spacing*/
+.navigation-menu li {
+  list-style: none; /*Removes the bullets of the unordered list*/
+  padding: 0px;
+  height: 23px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  display: inline; /* Words next to each other in row*/
+}
+
+/* Style the words of the menu */
+.navigation-menu li a {
+  color: #FFFFFF;
+  font-size: 15px; /*Change the size of letters*/
+  font-family: 'Lora', serif;
+  text-decoration: none; /*Removes the underline of the text*/
+  padding: 4px 14px;
+  line-height: 70px;
+ }
+
+/*Style when the mouse hovers above the menu*/
+.navigation-menu ul li a:hover{
+	color:#ff1a1a;
+	text-decoration:underline; /*Underlines the words of the menu*/
+}
+
+/*Style the main body of the html using flexbox */
+.main-container{
+  display: flex;
+  flex-direction: column;  
+}
+
+/*Centers the main body container*/
+.main-content{
+	margin:0 auto;
+	width:66%;
+	background-color:#d1e0e0;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Centers the text inside the container on index page*/
+.center_text{
+	width:66%;
+	margin: 0 auto;
+}
+
+/* Styles and centers the description and the videos on tutorial page*/
+.main-content-video{
+	margin:0 auto;
+	width:66%;
+	background-color:#d1e0e0;
+	font-family: 'Roboto', sans-serif;
+	text-align:center;
+}
+
+/* Sets the title of the page in the center*/
+.center_title{
+	text-align:center;
+	padding-bottom:40px;
+}
+
+/* Scales the image to be responsive */
+.img_scale {
+  height: auto;
+  width: 100%;
+  max-width: 300px; 
+}
+
+/* Scales the image to be responsive on review page */
+.img_scale_reviews {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+/* Making space between the picture using padding */
+.review_space{
+	padding-top:100px;
+}
+
+/* GLOSSARY */
+/* Sets size of the letter and the padding */
+.letterA_Z
+{											
+	font-family: 'Roboto', sans-serif;
+	font-size:55px;	
+	padding:25px;
+	
+}
+
+/* Sets the margin, padding, and size of the terms */
+.glossary_definition
+{
+	font-family: 'Roboto', sans-serif;
+	padding-left:50px;		
+	margin:2px;
+	font-size:28px;
+}
+
+/* Sets the margin and padding for the definition terms */
+.text_definition
+{
+	font-family: 'Roboto', sans-serif;
+	margin-left:25px;
+	padding-left:70px;					
+	
+}
+/* GLOSSARY */
+
+/* Creates a footer at the bottom of the page */
+footer{
+	width:100%;
+	background-color: #009999; /* Changes the background color */
+	padding:10px 0px; /* Starts from center position */
+	text-align:center; /* Center the text */
+	color:#FFFFFF;
+}
+
+/*Style when the mouse hovers above the footer*/
+footer a:hover{
+	color:#ff1a1a;
+}
+
+/*Media query for tablet Ipad */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+	
+  /* Changes the style of the body when in tablet phone*/
+  body{
+		background-color:#d6f5f5;
+	}
+  
+  /* Changes the style of the navigation menu when in tablet phone*/
+	.navigation-menu {
+	  background-color: #85e0e0;
+	  height: 70px;
+	  text-align:center;
+	}
+	
+	/* Changes the style of the footer when in tablet phone  */
+	footer{
+	width:100%;
+	background-color: #85e0e0;
+	padding:10px 0px;
+	text-align:center;
+	}
+}
+
+/*Media query for mobile phone Iphone 6 plus */
+
+@media only screen and (max-width: 600px)
+{
+	/* Changes the style of the body when in mobile phone*/
+	body{
+		background-color:#e6fff2;
+	}
+	
+	/* Changes the style of the navigation menu when in mobile phone*/
+	.navigation-menu {
+	  background-color: #4dffa6;
+	  height: 70px;
+	  text-align:center;
+	}
+
+	.navigation-menu li a {
+	  padding: 5px 5px;	/* Reducing padding in order to fit the menu in the mobile version */
+	  text-decoration: underline; /*Underlines the words of the menu*/
+	}
+	
+	/* Makes the image logo to go on the right side */
+	.navigation-menu img {
+		float:right;
+	}
+	
+	/*Style when the mouse hovers above the menu*/
+	.navigation-menu ul li a:hover{
+	color:green;
+	text-decoration:none; /* Removes the decoration */
+	}
+	
+	/* Changes the style of the footer when in mobile phone  */
+	footer{
+	width:100%;
+	background-color: #4dffa6;
+	padding:10px 0px;
+	text-align:center;
+	}
+	
+	/*Style when the mouse hovers above the footer*/
+	footer a:hover{
+	color:#ff1a1a;
+	}
+	
+	/*Sets the width of the youtube videos in order to be responsive*/
+	.container_iframe iframe{
+		width:100%;
+	}
+}
